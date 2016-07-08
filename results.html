@@ -1,0 +1,11 @@
+<div class="resultsBoard">
+	<div class="title">{{ selected_type }}</div>
+	<br><br>
+	<div>
+		<table class="resultTable">
+			<tr  ng-repeat="item in resultSet | limitTo:10" >
+				<td dragit>{{ item }} </td>
+			</tr>
+		</table>
+	</div>
+</div>
